@@ -17,6 +17,8 @@ Call-to-action buttons and clean navigation
 
 HTML • CSS • JavaScript
 
+Live link:https://saloni120205.github.io/OIBSIP/Task1/index.html
+
 ✅ Task 2 – Portfolio Website
 📌 Description
 
@@ -35,6 +37,8 @@ Easy navigation
 🛠️ Tech Used
 
 HTML • CSS • JavaScript
+
+Live link:https://saloni120205.github.io/OIBSIP/Task2/index.html
 
 ✅ Task 3 – Temperature Converter Website
 📌 Description
@@ -55,12 +59,10 @@ Lightweight JavaScript logic
 
 HTML • CSS • JavaScript
 
+Live links:https://saloni120205.github.io/OIBSIP/Task3/index.html
+
 🚀 How to Run
-
-Live links:
-
-Steps to run 
-1.Open the project folder
+1.click the live link
 2.Run any .html file in your browser
 
 📬 Contact
