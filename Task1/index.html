@@ -1,1 +1,203 @@
-Task 1 -Landing Page
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SweetAura — Cakes & Desserts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" class="logo">Sweet<span class="accent">Aura</span></a>
+        <div class="tag">Handcrafted Cakes • Bespoke Orders</div>
+      </div>
+
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact" class="btn-ghost">Order Now</a>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-left">
+      <h1>Celebrate Sweetly — Cakes that Make Moments</h1>
+      <p class="lead">Artisan cakes, vibrant flavours, and custom designs. From simple classics to showstopper centrepieces — we bake memories.</p>
+
+      <div class="hero-ctas">
+        <a href="#menu" class="btn-primary">Explore Menu</a>
+        <a href="#contact" class="btn-outline">Request Custom Quote</a>
+      </div>
+
+      <ul class="hero-features">
+        <li><strong>Free Local Delivery</strong><span>within city</span></li>
+        <li><strong>Custom Designs</strong><span>from ₹999</span></li>
+        <li><strong>Fresh Daily</strong><span>small-batch baking</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-right">
+    <div class="hero-main hero-bg">
+        <img src="images/background.webp" alt="Cake background">
+    </div>
+</div>
+
+  </section>
+
+  <!-- MENU / PRODUCTS -->
+  <section id="menu" class="section">
+    <div class="container">
+      <h2 class="section-title">Bestsellers</h2>
+      <p class="section-sub">Fan favourites — delicious inside and picture-perfect outside.</p>
+
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="images/vanilla-cake-7.webp" alt="Classic Vanilla">
+          <div class="card-body">
+            <h3>Classic Vanilla Elegance</h3>
+            <p class="price">₹1,199 <span>/ 1kg</span></p>
+            <p class="muted">Vanilla bean sponge, silky buttercream.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="images/OIP.jpeg" alt="Chocolate Truffle">
+          <div class="card-body">
+            <h3>Chocolate Truffle Dream</h3>
+            <p class="price">₹1,399 <span>/ 1kg</span></p>
+            <p class="muted">Rich chocolate sponge, ganache layers.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="images/Blissful-Berry-Bliss-Cake.webp" alt="Berry Bliss">
+          <div class="card-body">
+            <h3>Berry Bliss</h3>
+            <p class="price">₹1,299 <span>/ 1kg</span></p>
+            <p class="muted">Fresh berries, cream filling, citrus zing.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="images/rainbow.jpg" alt="Rainbow Party">
+          <div class="card-body">
+            <h3>Rainbow Party Cake</h3>
+            <p class="price">₹1,599 <span>/ 1kg</span></p>
+            <p class="muted">Fun layers, light frosting, celebration-ready.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Gallery — Styled Cakes</h2>
+      <div class="gallery-grid">
+        <img src="images/46.jpg" alt="">
+        <img src="images/rapunzel.jpg" alt="">
+        <img src="images/customized.jpg" alt="">
+        <img src="images/sea theme.jpg" alt="">
+        <img src="images/Bento cake.jpg" alt="">
+        <img src="images/anniversary.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why" class="section">
+    <div class="container grid-3">
+      <div class="why-card">
+        <img src="images/anime.jpg" alt="">
+        <h3>Custom Cake Design</h3>
+        <p class="muted">Design consultations for wedding, birthday & corporate cakes.</p>
+      </div>
+      <div class="why-card">
+        <img src="images/ingredients.jpeg" alt="">
+        <h3>Premium Ingredients</h3>
+        <p class="muted">Top-quality dairy, real fruit, and natural extracts.</p>
+      </div>
+      <div class="why-card">
+        <img src="images/Delivery.jpeg" alt="">
+        <h3>On-time Delivery</h3>
+        <p class="muted">Carefully packaged & delivered fresh.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="testimonials" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Loved by Customers</h2>
+      <div class="reviews">
+        <blockquote>“Ordered a custom wedding cake — it looked and tasted heavenly.” <cite>— Riya K.</cite></blockquote>
+        <blockquote>“Perfect party cake — kids loved the colors!” <cite>— Aman S.</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2 class="section-title">FAQ</h2>
+      <div class="faq-grid">
+        <details><summary>How do I order a custom cake?</summary><p>Use the order form or call us — we'll schedule a consultation and confirm design & pricing.</p></details>
+        <details><summary>What is your cancellation policy?</summary><p>Full refund up to 48 hours; partial refund for less than 48 hours.</p></details>
+        <details><summary>Do you do deliveries outside city?</summary><p>Yes — for select locations (charges may apply).</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / ORDER -->
+  <section id="contact" class="section alt contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2 class="section-title">Order / Request a Quote</h2>
+        <p class="muted">Tell us basic details and we'll get back within 12 hours.</p>
+        <p><strong>Phone:</strong> <a href="tel:+919309288136">9309288136</a></p>
+        <p><strong>Email:</strong> <a href="mailto:saloni.gajwe@example.com">saloni.gajwe@example.com</a></p>
+        <p><strong>Download contact:</strong> <a href="/mnt/data/DsaA.vcf" download>Download vCard</a></p>
+      </div>
+
+      <form id="orderForm" class="order-form" onsubmit="return handleOrder(event)">
+        <input id="o_name" type="text" placeholder="Your name" required>
+        <input id="o_phone" type="tel" placeholder="Phone number" required>
+        <input id="o_date" type="date" required>
+        <select id="o_type" required>
+          <option value="">Select cake type</option>
+          <option>Wedding Cake</option>
+          <option>Birthday Cake</option>
+          <option>Corporate</option>
+          <option>Custom Designer</option>
+        </select>
+        <textarea id="o_details" placeholder="Design / flavours / message"></textarea>
+        <button class="btn-primary" type="submit">Send Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 SweetAura — Artisan Cakes</div>
+      <div class="socials">
+        <a href="#">IG</a> <a href="#">FB</a> <a href="#">IN</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
