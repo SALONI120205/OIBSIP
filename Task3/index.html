@@ -1,1 +1,23 @@
-Task 3-Temperature converion website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURE CONVERTER WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"> Tempature Converter</h1>
+        <input type="number" id="inputTemp" placeholder="Enter Temperature">
+        <select id="inputUnit">
+        <option value="celsius">Celsius(C)</option>
+        <option value="fahrenheit">Faherenheit(F)</option>
+        <option value="kelvin">Kelvin(K)</option>   
+    </select>
+    <button onclick="convertTemp()">Convert</button>
+    <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* ------------------------------
+   DARK THEME + NEON GLOW UI
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #020617, #0a0f24, #1a1033);
+    background-size: 400% 400%;
+    animation: bgMove 14s infinite ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Animated Background */
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main Center Container */
+.container {
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.title {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 12px #6a00ff;
+}
+
+/* OUTER GLOWING BOX */
+.outer-box {
+    padding: 35px;
+    width: 450px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(0, 110, 255, 0.4);
+    box-shadow:
+        0 0 20px #005eff8a,
+        0 0 45px #8000ff75;
+
+    animation: floatBig 4s infinite ease-in-out;
+    margin-bottom: 15px;
+}
+
+@keyframes floatBig {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* SMALL FLOATING CONVERTER CARD */
+.converter-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(14px);
+    padding: 25px;
+    width: 100%;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 140, 255, 0.4);
+
+    box-shadow: 
+        0 0 15px #006eff,
+        0 0 30px #8000ff;
+
+    animation: float 3s infinite ease-in-out;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+
+    background: rgba(0, 0, 0, 0.4);
+    color: #d2d2ff;
+    border: 1px solid rgba(0, 132, 255, 0.5);
+
+    box-shadow: 0 0 12px rgba(0, 115, 255, 0.6);
+}
+
+input::placeholder {
+    color: #b4b4ff;
+}
+
+/* Neon Button */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 18px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+    background: linear-gradient(45deg, #005eff, #a200ff, #ff00c8);
+    background-size: 200% 200%;
+    color: white;
+    text-shadow: 0 0 6px black;
+
+    box-shadow:
+        0px 0px 15px #7f00ff,
+        0px 0px 30px #0066ff,
+        0px 0px 40px #ff00f7;
+
+    transition: 0.3s ease-in-out;
+    animation: rainbowGlow 3s infinite;
+}
+
+button:hover {
+    transform: scale(1.06);
+    box-shadow:
+        0px 0px 25px #ff00e6,
+        0px 0px 50px #4e00ff;
+}
+
+/* Result */
+#result {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    color: #7bb7ff;
+    text-shadow: 0 0 12px #6a00ff;
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rainbowGlow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
